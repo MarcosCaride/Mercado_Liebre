@@ -42,7 +42,7 @@
             <input type="text" name="nombre" placeholder="Nombre y Apellido">
             <br>
             <br>
-            <label for="nombreDeUsuario">Nombre de Usuario</label>
+            <label for="nombreDeUsuario" minlength="4">Nombre de Usuario</label>
             <br>
             <input type="text" name="nombreDeUsuario" placeholder="Nombre de Usuario">
             <br>
@@ -67,7 +67,7 @@
             <br>
             <label for="interes">Categorias de tu interes</label>
             <br>
-            <select name="usuarioCategoria" id="interes">
+            <select name="usuarioCategoria" id="interes" required>
                 <option value="electro">Electro</option>
                 <option value="moda">Moda</option>
                 <option value="hogar">Hogar</option>
@@ -81,12 +81,12 @@
             <input type="file" name="fotoPerfil">
             <br>
             <br>
-            <label for="contraseña">Crea tu contraseña</label>
+            <label for="contraseña" minlength="8" required>Crea tu contraseña</label>
             <br>
             <input type="password" name="contraseña" placeholder="Contraseña">
             <br>
             <br>
-            <label for="confirContra">Confirma tu contraseña</label>
+            <label for="confirContra" minlength="8">Confirma tu contraseña</label>
             <br>
             <input type="password" name="confirContra" placeholder="Confirma la Contraseña">
             <br>
