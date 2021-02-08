@@ -4,7 +4,9 @@ const app = express()
 const publicPath = path.resolve('./public')
 
 app.use( express.static(publicPath) );
-app.listen(3030, () => console.log("El servidor esta en funcionamiento"))
+app.listen(process.env.PORT || 3000, function(){
+    console.log("El servidor esta en corriendo en el puerto 3000")
+})
 
 app.get('/',  (req,res)=> {
     res.sendFile(path.resolve('./views/home.html'))
