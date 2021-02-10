@@ -11,16 +11,19 @@ body{
 
 header{
     background-color: #EAC926;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
     padding-bottom: 10px;
 }
 
 header input{
     font-size: 1vw;
-    width: 15vw;
+    width: 10vw;
+}
+
+.topHeader{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 h2{
@@ -58,6 +61,17 @@ footer section ul li{
 #searchBar{
     display: flex;
     align-items: stretch;
+    width: 40vw;
+    justify-self: end;
+}
+
+#searchBar input{
+    font-size: 10px;
+}
+
+.topHeader p{
+    text-align: center;
+    width: 100vw;
 }
 
 ul .menu{
@@ -83,11 +97,12 @@ footer{
     background-color: white;
 }
 
-form{
+.registro{
     margin: 5vw 20vw;
     color: #666;
     text-align: center;
     background-color: #EAC926;
+    border-radius: 20px;
 }
 
 form h2{
@@ -156,7 +171,7 @@ nav i{
 }
 
 .logo{
-    width: 50%;
+    width: 50vw;
 }
 
 .conjuntoDeProductos{
@@ -185,9 +200,6 @@ nav i{
     font-size: 16px;
     color: #39b54a;
     width: 70%;
-}
-.searchbar{
-    background-color: white;
 }
 
 .banner{
@@ -222,6 +234,20 @@ nav i{
 
 
 @media (min-width: 361px){
+
+    .logo{
+        width: 30vw;
+    }
+
+    .topHeader{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .topHeader p{
+        display: inline;
+    }
     
     article{
         /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */
@@ -237,10 +263,14 @@ nav i{
         width: 100%;
         justify-content: space-around;
     }
-
+    
     nav ul{
         display: flex;
         justify-content: space-around;
+    }
+    
+    nav ul li a{
+        font-size: 15px;
     }
 
     .conjuntoDeProductos article{
@@ -271,6 +301,14 @@ nav i{
     
     .logo{
         width: 30vw;
+    }
+
+    .topHeader p{
+        width: auto;
+    }
+
+    #searchBar{
+        width: 30%;
     }
     
     .conjuntoDeArticulos{
@@ -311,7 +349,7 @@ nav i{
     }
     
     .conjuntoDeArticulos article .descripcion{
-        transition: display 1s
+        transition: display 1s;
     }
     
     .conjuntoDeArticulos article:hover .descripcion{

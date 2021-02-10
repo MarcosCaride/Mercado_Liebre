@@ -7,15 +7,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <title>home</title>
+    <title>Registrate</title>
 </head>
 <body>
     <header>
-        <img class="logo" src="images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre">
-        <div id="serachBar">
-            <input type="search" name="" placeholder="Buscar productos marcas" id=""><button><i class="fas fa-search"></i></button>
+        <div class="topHeader">
+            <a href="/"><img class="logo" src="images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre"></a>
+            <form id="searchBar">
+                <input type="search" name="" placeholder="Buscar productos marcas" id=""><button><i class="fas fa-search"></i></button>
+            </form>
+            <p><i class="fas fa-hand-holding-usd"></i>Comprá en couotas y sin tarjetas de crédito</p>
         </div>
-        <p><i class="fas fa-hand-holding-usd"></i>Comprá en couotas y sin tarjetas de crédito</p>
         <br>
         <nav>
             <i class="fas fa-bars"></i>
@@ -34,7 +36,7 @@
         </nav>
     </header>
 
-        <form action="/register" method="POST">
+        <form class="registro" action="/register" method="POST">
             <h2>Registrate!</h2>
             <br>
             <label for="nomnre">Nombre</label>
